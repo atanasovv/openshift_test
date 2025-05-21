@@ -10,3 +10,9 @@ variable "region" {
 variable "version" {
   type = string
 }
+variable "number_of_nodes" {
+  type = int
+}
+variable "master_node_cpu" {
+  type = int
+}
