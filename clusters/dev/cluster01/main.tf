@@ -5,6 +5,7 @@ resource "null_resource" "{{ cookiecutter.clusterName }}" {
     region  = "{{ cookiecutter.region }}"
     version = "{{ cookiecutter.version }}"
     number_of_nodes = "{{cookiecutter.number_of_nodes}}"
+    master_node_cpu = "{{cookiecutter.master_node_cpu}}"
   }
 
   provisioner "local-exec" {
